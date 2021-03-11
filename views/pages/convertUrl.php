@@ -1,5 +1,6 @@
     <?php include '../header.php';?>
     <title>URL SHORTER</title>
+    <link rel="stylesheet" href="../../public/css/home.css">
 </head>
 <body>
     <?php include '../navbar.php';?>

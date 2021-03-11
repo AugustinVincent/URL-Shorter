@@ -1,2 +1,8 @@
 @import 'footer.css';
 @import 'navbar.css';
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
