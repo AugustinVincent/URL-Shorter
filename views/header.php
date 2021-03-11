@@ -1,3 +1,5 @@
+<?php session_start();?>
+<!-- Already start a empty session for our apges -->
 <!DOCTYPE html>
 <html lang="en">
 <head>

@@ -5,9 +5,13 @@
 <body>
     <?php require_once '../navbar.php';?>
 
-
-
-    <form action="../../src/component/accountCreation.php" method='post'>
+<!-- We check if the user is already connected to be sure that he can't come back on the sign up page  -->
+    <?php if(isset($_SESSION['username'])){
+        header('location: home.php');
+    }?>
+    <!-- The form that the user has to fill to create an account -->
+    <h1>INSCRIPTION</h1>
+    <form action="../../src/component/SignUp.php" method='post'>
 
         <label for="username">Username</label>
         <input id='username' type="text" name='username'>
