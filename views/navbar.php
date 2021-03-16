@@ -18,5 +18,6 @@
             <p>Welcome <?=$_SESSION['username']?></p>
             <a href="../../src/component/Logout.php">Logout</a> 
         <?php endif ?>
+
     </div>
 </nav>

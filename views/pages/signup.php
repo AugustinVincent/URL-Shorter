@@ -1,6 +1,6 @@
     <?php require_once '../header.php';?>
     <title>Sign Up</title>
-    <link rel="stylesheet" href="../../public/css/home.css">
+    <link rel="stylesheet" href="../../public/css/signup.css">
 </head>
 <body>
     <?php require_once '../navbar.php';?>
