@@ -5,7 +5,7 @@ session_start();
 $host = 'localhost';
 $dbname = 'login';
 $user = 'root';
-$pass = 'root';
+$pass = '';
 
 $db = new PDO('mysql:host=localhost;dbname=login', $user, $pass);
 
