@@ -2,8 +2,8 @@
 
 $host = 'localhost';
 $dbname = 'login';
-$user = 'augustin';
-$pass = 'admin';
+$user = 'root';
+$pass = 'root';
 
 
 

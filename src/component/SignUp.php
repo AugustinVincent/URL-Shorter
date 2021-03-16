@@ -1,7 +1,10 @@
 <?php 
 // Connect to the data base 
-$user = 'augustin';
-$pass = 'admin';
+$host = 'localhost';
+$dbname = 'login';
+$user = 'root';
+$pass = 'root';
+
 $db = new PDO('mysql:host=localhost;dbname=login', $user, $pass);
 
 $loginInfo = $db->query('SELECT * FROM `user`') ;
