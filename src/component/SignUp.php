@@ -3,9 +3,8 @@
 $host = 'localhost';
 $dbname = 'login';
 $user = 'root';
-$pass = 'root';
+$pass = '';
 
-// TEST
 $db = new PDO('mysql:host=localhost;dbname=login', $user, $pass);
 
 $loginInfo = $db->query('SELECT * FROM `user`') ;
