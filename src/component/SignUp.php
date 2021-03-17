@@ -11,8 +11,11 @@ $db = new PDO('mysql:host=localhost;dbname=login', $user, $pass);
 $loginInfo = $db->query('SELECT * FROM `user`') ;
 
 // get the existing usernames
-$users =  $loginInfo->fetchAll();
-foreach($users as $user){
+
+if(isset($loginInfo))
+{
+
+    $users =  $loginInfo->fetchAll();
 }
 
 $pdoStat = $db->prepare('INSERT INTO user VALUES (NULL, :username, :userpassword)');
