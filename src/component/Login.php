@@ -13,8 +13,8 @@ $db = new PDO('mysql:host=localhost;dbname=login', $user, $pass);
 
 $loginInfo = $db->query('SELECT * FROM `user`') ;
 
-
-$users =  $loginInfo->fetchAll();
+if(isset($loginInfo))
+    $users =  $loginInfo->fetchAll();
 // If fields are empty, we get the user back to the login page
 if(empty($_POST['username']) || empty($_POST['userpassword']))
 {
