@@ -1,15 +1,15 @@
 
 <?php
-//Code created randomly
+session_start();
 
 //Put the code into data base
 //TODO
 $host = 'localhost';
-$dbname = 'login';
+$dbname = 'url-shortener';
 $user = 'root';
 $pass = 'root';
 
-$db = new PDO('mysql:host=localhost;dbname=login', $user, $pass);
+$db = new PDO('mysql:host=localhost;dbname=url-shortener', $user, $pass);
 
 $keyInfo = $db->query('SELECT * FROM `keyGenerator`') ;
 
@@ -31,7 +31,7 @@ function keyGeneration()
     $keyIsFree = true;
     foreach($keys as $key)
     {
-        if($key['key'] == $keyGenerated) 
+        if($key['urlKey'] == $keyGenerated) 
         {
            $keyIsFree = false; 
            return keyGeneration();
@@ -71,6 +71,11 @@ else
     $pdostat->bindValue(':stats', $stats, PDO::PARAM_INT);
     
     $pdostat->execute();
+
+    $_SESSION['returnUrl'] = 'http://localhost:8888/URL-Shorter/Redirector.php?/=' . $key;
+
+    var_dump($_SESSION['returnUrl']);
+    header('location: ../../views/pages/home.php');
 }
 
     
@@ -90,4 +95,3 @@ else
 //TODO
 
 ?>
-<p><?=$possibilities?></p>
