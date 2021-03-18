@@ -9,16 +9,20 @@
     <?php if(isset($_SESSION['username'])){
         header('location: home.php');
     }?>
+    <section class="landing-section">
+        <div class="container">
     <!-- The form that the user has to fill to create an account -->
-    <h1>INSCRIPTION</h1>
-    <form action="../../src/component/SignUp.php" method='post'>
+            <h1>INSCRIPTION</h1>
+            <form action="../../src/component/SignUp.php" method='post' class="form-signup">
 
-        <label for="username">Username</label>
-        <input id='username' type="text" name='username'>
+                <label for="username">Username</label>
+                <input id='username' type="text" name='username' class="username-field form-signup-field">
 
-        <label for="password">Password</label>
-        <input id='password' type="text" name='userpassword'>
+                <label for="password">Password</label>
+                <input id='password' type="text" name='userpassword' class="username-field form-signup-field">
 
-        <input type="submit">
-    </form>
+                <input type="submit" class="userpassword-submit form-signup-field" value="S'inscrire">
+            </form>
+        </div>   
+    </section>
 <?php require_once '../footer.php';?>
