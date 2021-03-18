@@ -15,7 +15,7 @@
             </div>
             <div class="url-shorter-field-container">
                 <form action="../../src/component/UrlShorter.php" method="post">
-                    <input type="text" class="field" placeholder="Enter your link ...">
+                    <input type="text" class="field" value="<?php if(isset($_SESSION['returnUrl'])) echo $_SESSION['returnUrl'];?>" placeholder="Enter your link ..." name="urlToConvert">
                     <input type="submit"class="url-shorter-submit" value='GO'>
                 </form>
             </div>

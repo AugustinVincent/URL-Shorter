@@ -33,7 +33,6 @@ else{
         if($user['username'] == $_POST['username'])
         {
             $usernameIsFree = false;
-            var_dump($usernameIsFree);
         }
     }
     // If the username is free we insert the id informations in the db and connect the user
