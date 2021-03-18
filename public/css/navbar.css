@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lato:ital@1&family=Varela+Round&display=swap');
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
 .texte{
     width: 100vw;
     height: 100px;
@@ -10,7 +16,7 @@
     transition: all 0.3s ease 0s;
 }
 
- li, a, button{
+.navbar li, .navbar a, .navbar button{
      font-family: "varela Round", sans-serif;
      font-size: 17px;
      color: #ffffff;
@@ -25,7 +31,7 @@
 
 
 
-button{
+.navbar button{
     padding: 15px 25px;
     background-color:#2ecc71;
     border: none;
@@ -36,7 +42,7 @@ button{
     outline: none;
 }
 
-.texte button:hover{
+.texte .navbar button:hover{
     background-color:#1e272e;
 
     color: #27ae60;
