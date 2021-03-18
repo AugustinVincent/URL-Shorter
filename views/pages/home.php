@@ -10,8 +10,8 @@
         <div class="container">
             <h1 class="main-title">The best<br>Url shortener</h1>
             <div class="btn-container">
-                <a href=""><button class="login-btn btn">Login</button></a>
-                <a href=""><button class="signup-btn btn">Sign up</button></a>
+                <a href="login.php"><button class="login-btn btn">Login</button></a>
+                <a href="signup.php"><button class="signup-btn btn">Sign up</button></a>
             </div>
             <div class="url-shorter-field-container">
                 <form action="../../src/component/UrlShorter.php" method="post">
