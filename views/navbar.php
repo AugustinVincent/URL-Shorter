@@ -21,7 +21,7 @@
         <!-- If the user is connect we just wish him welcome and display a log out button  -->
         <?php if(isset($_SESSION['username'])) :?>
             <p>Welcome <?=$_SESSION['username']?></p>
-            <a href="../../src/component/Logout.php">Logout</a> 
+            <a href="../../src/component/Logout.php"><button>Logout</button></a> 
         <?php endif ?>
         
     </div>
