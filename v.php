@@ -18,13 +18,20 @@ foreach($urls as $url)
    
     if($redirectUrlKey === $url['urlKey'])
     {
+        $newStats = $url['stats'] + 1;
+        $id = $url['id'];
+        $upDateStats = $db->query("UPDATE keyGenerator SET stats = $newStats WHERE id = $id");
+        echo $newStats;
+        echo '<br>';
+        echo $id;
+
         header('location: ' . $url['url']);
 
     }
 
     else
     {
-        header('location: views/pages/home.php');
+        header('location: views/pages/404.php');
     }
 }
     

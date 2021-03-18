@@ -42,7 +42,7 @@ function keyGeneration()
 
 if(empty($_POST['urlToConvert']))
 {
-    header('location: ../../views/pages/home.php');
+    header('location: ../../views/pages/404.php');
 }
 
 // If fields a complete we check if the key isn't already taken 
@@ -72,7 +72,7 @@ else
     
     $pdostat->execute();
 
-    $_SESSION['returnUrl'] = 'http://localhost:8888/URL-Shorter/Redirector.php?/=' . $key;
+    $_SESSION['returnUrl'] = 'localhost:8888/v.php?/=' . $key;
 
     var_dump($_SESSION['returnUrl']);
     header('location: ../../views/pages/home.php');
