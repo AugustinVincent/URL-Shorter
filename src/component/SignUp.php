@@ -1,11 +1,11 @@
 <?php 
 // Connect to the data base 
 $host = 'localhost';
-$dbname = 'url-shortener';
+$dbname = 'login';
 $user = 'root';
 $pass = 'root';
 
-$db = new PDO('mysql:host=localhost;dbname=url-shortener', $user, $pass);
+$db = new PDO('mysql:host=localhost;dbname=login', $user, $pass);
 
 $loginInfo = $db->query('SELECT * FROM `user`') ;
 
@@ -25,7 +25,7 @@ if(empty($_POST['username']) || empty($_POST['userpassword']))
     // If not the user stay on the signup page
     header('location: ../../views/pages/signup.php');
 }
-// If fields a complete we check if the username is'nt already taken 
+// If fields a complete we check if the username isn't already taken 
 else{
     $usernameIsFree = true;
     foreach($users as $user)
@@ -33,6 +33,7 @@ else{
         if($user['username'] == $_POST['username'])
         {
             $usernameIsFree = false;
+            var_dump($usernameIsFree);
         }
     }
     // If the username is free we insert the id informations in the db and connect the user
