@@ -1,6 +1,6 @@
     <?php include '../header.php';?>
     <title>URL SHORTER</title>
-    <link rel="stylesheet" href="../../public/css/home.css">
+    <link rel="stylesheet" href="../../public/css/converturl.css">
 </head>
 <body>
     <?php include '../navbar.php';?>

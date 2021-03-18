@@ -1,8 +1,8 @@
-        <footer>
-            <div class="container">
+        <!-- <footer>
+            <div class="footer-container">
             
                 Footer
             </div>
-        </footer> 
+        </footer>  -->
     </body>
 </html>

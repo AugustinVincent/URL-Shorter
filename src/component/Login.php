@@ -3,13 +3,13 @@
 session_start();
 // Connect to the data base to check the ids
 $host = 'localhost';
-$dbname = 'login';
+$dbname = 'url-shortener';
 $user = 'root';
 $pass = '';
 
 // TEST
 
-$db = new PDO('mysql:host=localhost;dbname=login', $user, $pass);
+$db = new PDO('mysql:host=localhost;dbname=url-shortener', $user, $pass);
 
 $loginInfo = $db->query('SELECT * FROM `user`') ;
 

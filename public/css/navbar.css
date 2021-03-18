@@ -1,5 +1,56 @@
+
 .navbar{
-    width: 100vw;
-    height: 10vh;
-    background: green;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
 }
+
+.texte{
+    width: 100vw;
+    height: 100px;
+    background: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar li, .navbar a, .navbar button{
+     font-family: "varela Round", sans-serif;
+     font-size: 17px;
+     color: #ffffff;
+     border: none;
+ }
+
+    
+.texte li a{
+    transition: all 0.3s ease 0s;
+}
+
+
+
+
+.navbar button{
+    padding: 15px 25px;
+    background-color:#2ecc71;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-right: 10px;
+    outline: none;
+}
+
+.texte .navbar button:hover{
+    background-color:#1e272e;
+
+    color: #27ae60;
+}
+
+
+.texte a:hover{
+    color: #27ae60;
+
+}
+

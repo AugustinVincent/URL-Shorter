@@ -1,6 +1,6 @@
     <?php require '../header.php';?>
     <title>Connexion</title>
-    <link rel="stylesheet" href="../../public/css/connexion.css">
+    <link rel="stylesheet" href="../../public/css/login.css">
     </head>
     <?php require '../navbar.php';?>
     

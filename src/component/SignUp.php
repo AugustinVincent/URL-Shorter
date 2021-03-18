@@ -1,12 +1,11 @@
 <?php 
 // Connect to the data base 
 $host = 'localhost';
-$dbname = 'login';
+$dbname = 'url-shortener';
 $user = 'root';
 $pass = '';
 
-// TEST
-$db = new PDO('mysql:host=localhost;dbname=login', $user, $pass);
+$db = new PDO('mysql:host=localhost;dbname=url-shortener', $user, $pass);
 
 $loginInfo = $db->query('SELECT * FROM `user`') ;
 
@@ -34,7 +33,6 @@ else{
         if($user['username'] == $_POST['username'])
         {
             $usernameIsFree = false;
-            var_dump($usernameIsFree);
         }
     }
     // If the username is free we insert the id informations in the db and connect the user
