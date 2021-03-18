@@ -12,3 +12,11 @@ body{
     margin: 0;
     background: #000000;
 }
+
+a{
+    text-decoration: none;
+}
+
+input{
+    color: #444444 !important;
+}

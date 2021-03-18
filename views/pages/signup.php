@@ -11,7 +11,6 @@
     }?>
     <!-- The form that the user has to fill to create an account -->
     <h1>INSCRIPTION</h1>
-    <div class="forum">
     <form action="../../src/component/SignUp.php" method='post'>
 
         <label for="username">Username</label>
@@ -22,5 +21,4 @@
 
         <input type="submit">
     </form>
-    </div>
 <?php require_once '../footer.php';?>

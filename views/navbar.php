@@ -12,8 +12,8 @@
             <!-- Display is the user isn't connect and if he's not we also display login and sign up links -->
             <?php if(empty($_SESSION['username'])) :?>
                 
-                <a href="signup.php"><button>Inscription<button></a>
-                <a href="login.php">Connexion</a>
+                <a href="signup.php"><button>Inscription</button></a>
+                <a href="login.php"><button>Connexion</button></a>
             <?php endif ?>
         <div>
 
