@@ -25,7 +25,7 @@ if(empty($_POST['username']) || empty($_POST['userpassword']))
     // If not the user stay on the signup page
     header('location: ../../views/pages/signup.php');
 }
-// If fields a complete we check if the username is'nt already taken 
+// If fields a complete we check if the username isn't already taken 
 else{
     $usernameIsFree = true;
     foreach($users as $user)
@@ -33,6 +33,7 @@ else{
         if($user['username'] == $_POST['username'])
         {
             $usernameIsFree = false;
+            var_dump($usernameIsFree);
         }
     }
     // If the username is free we insert the id informations in the db and connect the user
