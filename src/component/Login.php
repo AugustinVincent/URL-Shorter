@@ -5,7 +5,7 @@ session_start();
 $host = 'localhost';
 $dbname = 'url-shortener';
 $user = 'root';
-$pass = '';
+$pass = 'root';
 
 // TEST
 

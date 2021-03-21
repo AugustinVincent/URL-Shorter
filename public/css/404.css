@@ -1,0 +1,17 @@
+h1
+{
+    display: flex;
+    margin: 150px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+

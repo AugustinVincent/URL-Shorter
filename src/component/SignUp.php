@@ -3,7 +3,7 @@
 $host = 'localhost';
 $dbname = 'url-shortener';
 $user = 'root';
-$pass = '';
+$pass = 'root';
 
 $db = new PDO('mysql:host=localhost;dbname=url-shortener', $user, $pass);
 
