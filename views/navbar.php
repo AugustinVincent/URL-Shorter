@@ -2,7 +2,9 @@
 <nav class="navbar">
     <div class="texte">
         <li><a href="home.php">Home</a><li>
-        <li><a href="converturl.php">Convert Url</a><li>
+        <?php if(isset($_SESSION['username'])) :?>
+            <li><a href="converturl.php">Convert Url</a><li>
+        <?php endif ?>
         <li><a href="contact.php">Contact</a><li>
         <li><a href="pricing.php">Pricing</a><li>
 

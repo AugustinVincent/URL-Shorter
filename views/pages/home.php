@@ -1,14 +1,6 @@
     <?php include '../header.php';?>
     <link rel="stylesheet" href="../../public/css/home.css">
     <title>Home page</title>
-    <style>
-        .landing-section .webgl{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index : -1;
-}
-    </style>
 </head>
 <body>
     <?php include '../navbar.php';?>

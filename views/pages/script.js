@@ -11,9 +11,9 @@ Textures
  */
 
 const textureLoader = new THREE.TextureLoader()
-const texture = textureLoader.load('texture.png')
-const disMap = textureLoader.load('displacement-map.png')
-const alphaMap = textureLoader.load('alpha-map.png')
+const texture = textureLoader.load('textures/texture.png')
+const disMap = textureLoader.load('textures/displacement-map.png')
+const alphaMap = textureLoader.load('textures/alpha-map.png')
 
 /**
  * Objects
@@ -81,9 +81,10 @@ window.addEventListener('resize', () =>
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
 })
+
 const animate = () =>
 {
-    plane.rotation.z += 0.005
+    plane.rotation.z += 0.002
     plane.material.displacementScale = 0.5 +mouseY * 0.0005
     renderer.render(scene, camera)
     requestAnimationFrame(animate)
