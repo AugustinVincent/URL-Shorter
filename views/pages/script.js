@@ -62,14 +62,15 @@ scene.add(camera)
  * Renderer
  */
 const renderer = new THREE.WebGLRenderer({
-    canvas : canvas
+    canvas : canvas,
+    alpha : true
 })
 renderer.setSize(sizes.width, sizes.height)
 
 let mouseY
 window.addEventListener('mousemove', (e) =>
 {
-    mouseY =  e.clientY
+    mouseY =  + e.clientY  - window.innerHeight / 2
 })
 
 window.addEventListener('resize', () =>
