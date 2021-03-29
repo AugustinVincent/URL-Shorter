@@ -9,7 +9,7 @@
 
     <div class="container">
         <h2>404</h2>
-        <h3>Oops error..... It seems like you landed in the wrong area ! Go back to home to create new URL's to share.</h3>
+        <p>Oops error..... It seems like you landed in the wrong area, maybe your URL is deactivated ! Go back to home to create new URL's to share.</p>
         <div class="btn-container">
             <a href="home.php"><button class="home-btn btn">Go back Home !</button></a>
         </div>
