@@ -19,7 +19,7 @@ const alphaMap = textureLoader.load('textures/alpha-map.png')
  * Objects
  */
 
-const planeGeometry = new THREE.PlaneBufferGeometry(5, 5, 64, 64)
+const planeGeometry = new THREE.PlaneBufferGeometry(5, 5, 32, 32)
 const planeMaterial = new THREE.MeshStandardMaterial({
     color : 0xffffff,
     map : texture,
@@ -48,7 +48,7 @@ scene.add(plane)
  */
 const sizes = {
     width: window.innerWidth,
-    height: window.innerHeight
+    height: window.innerHeight - 100
 }
 
 /**
@@ -76,7 +76,7 @@ window.addEventListener('mousemove', (e) =>
 window.addEventListener('resize', () =>
 {
     sizes.width = window.innerWidth
-    sizes.height =  window.innerHeight
+    sizes.height =  window.innerHeight- 100
     renderer.setSize(sizes.width, sizes.height)
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();

@@ -1,11 +1,10 @@
 .landing-section{
     width: 100vw;
-    height: 100vh;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position: relative;
 }
 
 .landing-section .webgl{

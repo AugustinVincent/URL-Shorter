@@ -16,7 +16,7 @@ $urls = $urls->fetchAll();
 foreach($urls as $url)
 {
    
-    if($redirectUrlKey === $url['urlKey'])
+    if($redirectUrlKey === $url['urlKey'] && $url['status']=== true)
     {
         $newStats = $url['stats'] + 1;
         $id = $url['id'];

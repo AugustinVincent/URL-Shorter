@@ -1,6 +1,6 @@
 .landing-section{
     width: 100vw;
-    height: 100vh;
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +38,9 @@
     border: none;
     height: 50px;
     margin: 10px 0;
+    box-sizing: border-box;
+    padding: 0 20px;
+    outline: none;
 }
 
 .form-connection-field{
@@ -47,6 +50,9 @@
     border: none;
     height: 50px;
     margin: 10px 0;
+    box-sizing: border-box;
+    padding: 0 20px;
+    outline: none;
 }
 
 .userpassword-submit{
