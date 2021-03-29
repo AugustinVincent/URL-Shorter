@@ -1,12 +1,5 @@
 <?php
-$host = 'localhost';
-$dbname = 'url-shortener';
-$user = 'root';
-$pass = 'root';
-
-$db = new PDO('mysql:host=localhost;dbname=url-shortener', $user, $pass);
-
-
+require_once 'src/http/Database.php';
 $redirectUrlKey = $_GET["/"];
 
 $urls = $db->query('SELECT * FROM `keyGenerator`');
@@ -15,8 +8,8 @@ $urls = $urls->fetchAll();
 
 foreach($urls as $url)
 {
-   
-    if($redirectUrlKey === $url['urlKey'] && $url['status']=== true)
+   var_dump($url['urlStatus']);
+    if($redirectUrlKey === $url['urlKey'] && $url['urlStatus'] == 1)
     {
         $newStats = $url['stats'] + 1;
         $id = $url['id'];

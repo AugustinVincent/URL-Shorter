@@ -10,15 +10,25 @@
     <canvas class="webgl"></canvas>
         <div class="container">
             <h1 class="main-title">The best<br>Url shortener</h1>
-            <div class="btn-container">
-                <a href="login.php"><button class="login-btn btn">Login</button></a>
-                <a href="signup.php"><button class="signup-btn btn">Sign up</button></a>
-            </div>
+            
+            <?php if(!isset($_SESSION['username'])) : ?>
+                <div class="btn-container">
+                    <a href="login.php"><button class="login-btn btn">Login</button></a>
+                    <a href="signup.php"><button class="signup-btn btn">Sign up</button></a>
+                </div>
+            <?php endif?>
+            <?php if(isset($_SESSION['username'])) : ?>
+                <div class="connected-infos-container">
+                    <p class="paragraph">Take advantage of a space to manage all your urls. Activate, deactivate, delete, rename and have access to all the shortened urls that you have converted. With URLights, get acces to the shortest url you could have and manage them as your wishes. </p>
+                    <div class="url-manager-link" class="link-container"><a  href="converturl.php">Go to your Url manager</a></div>
+                </div>
+            <?php endif?>
             <div class="url-shorter-field-container">
-                <form action="../../src/component/UrlShorter.php" method="post">
+                <form action="../../src/component/UrlShorter.php?page=home" method="post">
                     <input type="text" class="field" value="<?php if(isset($_SESSION['returnUrl'])) echo $_SESSION['returnUrl'];?>" placeholder="Enter your link ..." name="urlToConvert">
                     <input type="submit"class="url-shorter-submit" value='GO'>
                 </form>
+                
             </div>
         </div>
     </section>

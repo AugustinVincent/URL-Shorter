@@ -13,7 +13,7 @@ if(isset($keyInfo))
         $keys =  $keyInfo->fetchAll();
 }
 
-$pdostat = $db -> prepare('INSERT INTO keyGenerator VALUES (NULL, :urls, :keys, :activated, :username, :stats) ');
+$pdostat = $db -> prepare('INSERT INTO keyGenerator VALUES (NULL, :urls, :keys, :activated, :username, :stats, :urlName) ');
 
 //check if field is empty
 
@@ -58,19 +58,23 @@ else
         $username = '';
     } 
     $stats = 0;
+    $urlName = explode("://", $url);
+    $urlName = explode(".", $urlName[1]);
+    $urlName = $urlName[0];
 
     $pdostat->bindValue(':urls', $url, PDO::PARAM_STR); 
     $pdostat->bindValue(':keys', $key, PDO::PARAM_STR); 
     $pdostat->bindValue(':activated', $status, PDO::PARAM_BOOL); 
     $pdostat->bindValue(':username', $username, PDO::PARAM_STR); 
     $pdostat->bindValue(':stats', $stats, PDO::PARAM_INT);
+    $pdostat->bindValue(':urlName', $urlName, PDO::PARAM_STR);
     
     $pdostat->execute();
 
     $_SESSION['returnUrl'] = 'localhost:8888/v.php?/=' . $key;
 
     var_dump($_SESSION['returnUrl']);
-    header('location: ../../views/pages/home.php');
+    header('location: ../../views/pages/' . $_GET['page'] . '.php');
 }
 
     

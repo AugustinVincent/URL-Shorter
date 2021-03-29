@@ -1,9 +1,11 @@
-
+.urlight-logo{
+    width: 200px;
+}
 
 .texte{
     width: 100vw;
     height: 100px;
-    background: black;
+    background: #050505;;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -16,6 +18,7 @@
      font-size: 17px;
      color: #ffffff;
      border: none;
+     display: flex;
  }
 
     
@@ -24,9 +27,17 @@
 }
 
 
+.account-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.account-container .account-btn{
+    margin: 0 20px;
+}
 
-.navbar button{
+.navbar a.link-button{
     padding: 7.5px 25px;
     background-color:#2ecc71;
     border: none;
@@ -39,7 +50,6 @@
 
 .texte .navbar button:hover{
     background-color:#1e272e;
-
     color: #27ae60;
 }
 
