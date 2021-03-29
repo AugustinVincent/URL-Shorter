@@ -8,7 +8,11 @@
 
 
     <div class="container">
-        <h1>Oops 404 error..... WRONG PLACE</h1>
+        <h2>404</h2>
+        <h3>Oops error..... It seems like you landed in the wrong area ! Go back to home to create new URL's to share.</h3>
+        <div class="btn-container">
+            <a href="home.php"><button class="home-btn btn">Go back Home !</button></a>
+        </div>
     </div>
     
 
