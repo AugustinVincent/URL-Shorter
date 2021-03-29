@@ -1,11 +1,6 @@
 <?php 
 // Connect to the data base 
-$host = 'localhost';
-$dbname = 'url-shortener';
-$user = 'root';
-$pass = 'root';
-
-$db = new PDO('mysql:host=localhost;dbname=url-shortener', $user, $pass);
+require_once '../http/Database.php';
 
 $loginInfo = $db->query('SELECT * FROM `user`') ;
 

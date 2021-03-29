@@ -4,12 +4,7 @@ session_start();
 
 //Put the code into data base
 //TODO
-$host = 'localhost';
-$dbname = 'url-shortener';
-$user = 'root';
-$pass = 'root';
-
-$db = new PDO('mysql:host=localhost;dbname=url-shortener', $user, $pass);
+require_once '../http/Database.php';
 
 $keyInfo = $db->query('SELECT * FROM `keyGenerator`') ;
 
