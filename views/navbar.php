@@ -1,4 +1,3 @@
-
 <nav class="navbar">
     <div class="texte">
         <img src="../../public/img/logo.png" alt="" class="urlight-logo">

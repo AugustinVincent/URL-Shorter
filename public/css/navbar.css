@@ -1,16 +1,17 @@
-.urlight-logo{
-    width: 200px;
-}
 
 .texte{
     width: 100vw;
     height: 100px;
-    background: #050505;;
+    background: black;
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     transition: all 0.3s ease 0s;
+}
+
+img.urlight-logo{
+    width: 200px
 }
 
 .navbar li, .navbar a, .navbar button{

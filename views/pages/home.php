@@ -21,7 +21,7 @@
             <?php endif?>
             <?php if(isset($_SESSION['username'])) : ?>
                 <div class="connected-infos-container">
-                    <p class="paragraph">Take advantage of a space to manage all your urls. Activate, deactivate, delete, rename and have access to all the shortened urls that you have converted. With URLights, get acces to the shortest url you could have and manage them as your wishes. </p>
+                    <p class="paragraph">Take advantage of a space to manage all your urls. Activate, deactivate, delete, rename and have access to all the shortened urls that you have converted. With URLights, get acces to the shortest url you could have and manage them as you wish. </p>
                     <div class="url-manager-link" class="link-container"><a  href="converturl.php">Go to your Url manager</a></div>
                 </div>
             <?php endif?>
