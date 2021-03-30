@@ -1,6 +1,7 @@
-    <?php require '../header.php';?>
-    <title>Connexion</title>
-    <link rel="stylesheet" href="../../public/css/login.css">
+        <?php require '../header.php';?>
+        <title>Connexion</title>
+        <link rel="stylesheet" href="../../public/css/login.css">
+        <?php unset($_SESSION['singup-error']);?>
     </head>
     <?php require '../navbar.php';?>
     
@@ -24,6 +25,9 @@
 
                 <input type="submit" class="userpassword-submit form-connection-field" value="Se connecter">
             </form>
+            <?php if(isset($_SESSION['login-error'])):?>
+                <p><?=$_SESSION['login-error'];?></p>
+            <?php endif?>
         </div>
         
 

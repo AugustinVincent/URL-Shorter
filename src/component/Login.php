@@ -1,6 +1,7 @@
 <?php 
 // Start the session for the login system
 session_start();
+unset($_SESSION['login-error']);
 // Connect to the data base to check the ids
 require_once '../http/Database.php';
 
@@ -11,6 +12,7 @@ if(isset($loginInfo))
 // If fields are empty, we get the user back to the login page
 if(empty($_POST['username']) || empty($_POST['userpassword']))
 {
+    $_SESSION['login-error'] = "Your sign in connections are wrong. Be sure that your username and your passsword has no white-space and that it contains at least 8 charcters";
     header('location: ../../views/pages/login.php');
     
 }
@@ -25,6 +27,7 @@ else{
         }
         // If the id's informations doesn't match with any id informations in the date base, we make the user stay on the login page
         else{
+            $_SESSION['login-error'] = "You username or you password is wrong";
             header('location: ../../views/pages/login.php');
         }
     }

@@ -1,6 +1,8 @@
     <?php require '../header.php';?>
     <title>URL SHORTER</title>
     <link rel="stylesheet" href="../../public/css/converturl.css">
+    <?php unset($_SESSION['singup-error']);?>
+    <?php unset($_SESSION['login-error']);?>
 </head>
 <body>
     <?php require '../navbar.php';?>

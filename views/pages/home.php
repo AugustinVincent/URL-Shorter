@@ -1,6 +1,8 @@
     <?php include '../header.php';?>
     <link rel="stylesheet" href="../../public/css/home.css">
     <title>Home page</title>
+    <?php unset($_SESSION['singup-error']);?>
+    <?php unset($_SESSION['login-error']);?>
 </head>
 <body>
     <?php include '../navbar.php';?>
@@ -25,11 +27,11 @@
             <?php endif?>
             <div class="url-shorter-field-container">
                 <form action="../../src/component/UrlShorter.php?page=home" method="post">
-                    <input type="text" class="field" value="<?php if(isset($_SESSION['returnUrl'])) echo $_SESSION['returnUrl'];?>" placeholder="Enter your link ..." name="urlToConvert">
+                    <input type="text" class="field" value="" placeholder="Enter your link ..." name="urlToConvert">
                     <input type="submit"class="url-shorter-submit" value='GO'>
                 </form>
-                
             </div>
+            <p><?php if(isset($_SESSION['returnUrl'])) echo $_SESSION['returnUrl'];?></p>
         </div>
     </section>
     </div>

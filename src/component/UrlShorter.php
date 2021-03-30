@@ -60,6 +60,8 @@ else
     $stats = 0;
     $urlName = explode("://", $url);
     $urlName = explode(".", $urlName[1]);
+    if($urlName[0] === 'www')
+        $urlName = explode(".", $urlName[1]);
     $urlName = $urlName[0];
 
     $pdostat->bindValue(':urls', $url, PDO::PARAM_STR); 
@@ -71,26 +73,9 @@ else
     
     $pdostat->execute();
 
-    $_SESSION['returnUrl'] = 'localhost:8888/v.php?/=' . $key;
-
-    var_dump($_SESSION['returnUrl']);
+    $_SESSION['returnUrl'] = $_SERVER['HTTP_HOST'] . '/v.php?/='. $key;
     header('location: ../../views/pages/' . $_GET['page'] . '.php');
 }
 
-    
-
-// $keyinfo = $db->query('SELECT * FROM `keyGenerator`') ;
-
-// $keys =  $keyinfo->fetchAll();
-
-
-// 1. Create data base for keyGenerator
-// # of columns : URL (var), key (var), status (bool)
-
-//If code in data base, do it again (until key is unique)
-//TODO
-
-//New key has to bring us back to main URL(url in data base)
-//TODO
 
 ?>

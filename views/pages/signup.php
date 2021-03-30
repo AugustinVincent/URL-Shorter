@@ -1,6 +1,7 @@
     <?php require_once '../header.php';?>
     <title>Sign Up</title>
     <link rel="stylesheet" href="../../public/css/signup.css">
+    <?php unset($_SESSION['login-error']);?>
 </head>
 <body>
     <?php require_once '../navbar.php';?>
@@ -23,6 +24,10 @@
 
                 <input type="submit" class="userpassword-submit form-signup-field" value="S'inscrire">
             </form>
+            <?php 
+            if(isset($_SESSION['singup-error'])):?>
+                <p><?=$_SESSION['singup-error'];?></p>
+            <?php endif?>
         </div>   
     </section>
 <?php require_once '../footer.php';?>
