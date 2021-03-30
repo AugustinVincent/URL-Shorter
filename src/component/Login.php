@@ -27,7 +27,7 @@ else{
         }
         // If the id's informations doesn't match with any id informations in the date base, we make the user stay on the login page
         else{
-            $_SESSION['login-error'] = "You username or you password is wrong";
+            $_SESSION['login-error'] = "You username or your password is wrong";
             header('location: ../../views/pages/login.php');
         }
     }

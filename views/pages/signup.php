@@ -13,7 +13,7 @@
     <section class="landing-section">
         <div class="container">
     <!-- The form that the user has to fill to create an account -->
-            <h1>INSCRIPTION</h1>
+            <h1>Sign up</h1>
             <form action="../../src/component/SignUp.php" method='post' class="form-signup">
 
                 <label for="username">Username</label>
