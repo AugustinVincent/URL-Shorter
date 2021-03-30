@@ -7,7 +7,7 @@
 }
 
 .container{
-    width: 400px;
+    width: clamp(0px, 90%, 400px);
     background: #050505;
     box-shadow: 0px 0px  10px 10px rgba(10, 10, 10, 0.8);
     border-radius: 50px;
