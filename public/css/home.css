@@ -15,7 +15,7 @@
 }
 
 .container{
-    width: 700px;
+    width: clamp(0px, 90%, 700px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,7 +23,7 @@
 }
 
 .main-title{
-    font-size: 7rem;
+    font-size: clamp(3.5rem, 10vw, 7rem);
     text-align: center;
     margin: 0;
 }

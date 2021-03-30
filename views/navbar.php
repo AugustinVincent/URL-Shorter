@@ -1,32 +1,32 @@
 <nav class="navbar">
-    <div class="texte">
-        <img src="../../public/img/logo.png" alt="" class="urlight-logo">
-        <li><a href="home.php">Home</a></li>
-        <?php if(isset($_SESSION['username'])) :?>
-            <li><a href="converturl.php">Convert Url</a></li>
-        <?php endif ?>
-        <li><a href="contact.php">Contact</a></li>
+    <img src="../../public/img/logo.png" alt="" class="urlight-logo">
+    <ul class="links-container">
+        <li><a class="link-animation" href="home.php">Home</a></li>
+        <?php if(isset($_SESSION['username'])) :?><li><a class="link-animation" href="converturl.php">URL Manager</a></li><?php endif ?>
+        <li><a class="link-animation" href="contact.php">Contact</a></li>
 
         <!-- Display is the user isn't connect and if he's not we also display login and sign up links -->
         <?php if(empty($_SESSION['username'])) :?>
-            <li class="account-container">
-                <a class="link-button" href="signup.php">Inscription</a>
-                <a class="link-button"  href="login.php">Connexion</a>
-            </li>
+        <div class="account-info-container">
+            <li class="signup-btn"><a href="signup.php">Sign up</a></li>
+            <li class="signin-btn"><a  href="login.php">Sign in</a></li>
+        </div>
         <?php endif ?>
 
         <!-- If the user is connect we just wish him welcome and display a log out button  -->
         
-
-        
         <?php if(isset($_SESSION['username'])) :?>
-            <li class="account-container">
-                <span class="account-btn">Welcome <?=$_SESSION['username']?></span>
-                <a class="link-button"  href="../../src/component/Logout.php">Logout</a> 
-            </li>
+        <div class="account-info-container">
+            <li class="account-username-display">Welcome <?=$_SESSION['username']?></li>
+            <li class="logout-btn"><a  href="../../src/component/Logout.php">Logout</a></li>
+        </div>
         <?php endif ?>
-    <div>
-
+    </ul>
+    <div class="burger-menu">
+        <span class="burger-menu-bar"></span>
+        <span class="burger-menu-bar"></span>
+        <span class="burger-menu-bar"></span>
+    </div>
     
     
         

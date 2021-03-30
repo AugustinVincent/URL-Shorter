@@ -2,17 +2,17 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: clamp(10px, 10%, 100px);
     align-items: center;
 }
 
 .convert-url-title{
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 10vw, 5rem);
     text-align: center;
 }
 
 .converter-container{
-    width: 50%;
+    width: clamp(0px, 90%, 700px);
 }
 
 
