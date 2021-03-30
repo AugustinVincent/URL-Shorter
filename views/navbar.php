@@ -23,9 +23,9 @@
         <?php endif ?>
     </ul>
     <div class="burger-menu">
-        <span class="burger-menu-bar"></span>
-        <span class="burger-menu-bar"></span>
-        <span class="burger-menu-bar"></span>
+        <div class="burger-menu-bar"></div>
+        <div class="burger-menu-bar"></div>
+        <div class="burger-menu-bar"></div>
     </div>
     
     

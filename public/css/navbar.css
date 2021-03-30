@@ -4,7 +4,6 @@
     height: 100px;
     justify-content: space-around;
     align-items: center;
-    padding: 0 20px;
 }
 
 .navbar .urlight-logo{
@@ -81,4 +80,91 @@
     right: auto;
     width: 100%;
 
+}
+
+.burger-menu{
+    width: 30px;
+    height: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.burger-menu .burger-menu-bar{
+    width: 100%;
+    height: 2px;
+    border-radius: 10px;
+    background: #ececec;
+    transition: 0.3s ease-out;
+}
+
+
+.opened-menu{
+    width: 100% !important;
+}
+
+.cross-menu :nth-child(1){
+    transform: translateY(9px) rotate(-45deg);
+}
+
+.cross-menu :nth-child(2){
+    opacity: 0;
+}
+.cross-menu :nth-child(3){
+    transform: translateY(-9px) rotate(45deg);
+}
+
+
+@media (max-width : 700px){
+
+    
+    .burger-menu{
+        display: flex;
+    }
+    
+
+    .navbar{
+        position: relative;
+    }
+    
+    .navbar .links-container{
+        width: 0;
+        height: 100vh;
+        z-index: 1;
+        justify-content: flex-start;
+        flex-direction: column;
+        background: rgba(0,0,0,0.9);
+        position: absolute;
+        right: 0;
+        top: 0;
+        overflow: hidden;
+        align-items: center;
+        padding: 0;
+        padding-top: 20%;
+        transition: .3s ease-in-out;
+        margin: 0;
+    }
+    
+    .navbar .links-container li{
+        font-size: 2rem;
+        margin: 20px 0;
+    }
+
+    .account-info-container{
+        flex-direction: column;
+    }
+    
+    .navbar .logout-btn{     
+        width: 120px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 30px;
+        border: 1px solid #ececec;
+        margin-left: 20px;
+        margin-left: 20px !important;
+        font-size: 1.2rem !important;
+    }
 }

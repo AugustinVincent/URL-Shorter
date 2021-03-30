@@ -67,6 +67,5 @@
         </div>
         </form>
     </div>
-    <script src="../../public/js/script.js" ></script>
 <?php require '../footer.php';?>
 

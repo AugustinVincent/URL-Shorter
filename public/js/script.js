@@ -20,3 +20,14 @@ deleteCheckbox.forEach((checkbox, index)=> {
     })
 });
 
+
+const burgerMenu = document.querySelector('.burger-menu')
+const linksContainer = document.querySelector('.links-container')
+
+
+
+burgerMenu.addEventListener('click', () =>
+{
+    linksContainer.classList.toggle('opened-menu')
+    burgerMenu.classList.toggle('cross-menu')
+})
