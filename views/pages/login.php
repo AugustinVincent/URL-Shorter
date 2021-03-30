@@ -14,7 +14,7 @@
 
     <section class="landing-section">
         <div class="container">
-            <h1>CONNEXION</h1>        <!-- The form that the user has to fill to connect to his account -->
+            <h1>Sign in</h1>        <!-- The form that the user has to fill to connect to his account -->
             <form action="../../src/component/Login.php" method='post' class="form-connection">
 
                 <label for="username">Username</label>
