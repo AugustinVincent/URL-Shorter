@@ -15,7 +15,7 @@
         </div>
 
         <div class="contact-form">
-            <form method = "post" action = "../../src/component/ContactForm.php">
+            <form method = "post">
                 <input name = "name type="text class = "form-control" placeholder = "Your Name" required>
                     <input name = "email" type="email" class = "form-control" placeholder = "Your Email" required>
                     <textarea name="message" class = "form-control" placeholder = "Message" row = "4" required></textarea>
