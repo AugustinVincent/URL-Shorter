@@ -9,7 +9,7 @@
     <h1>Welcome to the contact page</h1>
     <div class="contact-title">
         <h2> Contact</h2>
-        <h3> We will always take care of you ! </h3>
+        <h3> We will always take care of you !</h3>
     </div>
 
     <div class="contact-form">

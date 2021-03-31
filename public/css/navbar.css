@@ -156,15 +156,24 @@
         flex-direction: column;
     }
     
-    .navbar .logout-btn{     
-        width: 120px;
-        height: 30px;
-        text-align: center;
-        line-height: 30px;
-        border-radius: 30px;
-        border: 1px solid #ececec;
-        margin-left: 20px;
+    .navbar .logout-btn{ 
         margin-left: 20px !important;
+        font-size: 1.2rem !important;
+    }
+
+    .navbar .signup-btn{ 
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 15px !important;
+        font-size: 1.2rem !important;
+    }
+
+    .navbar .signin-btn{ 
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        margin-left: 15px !important;
         font-size: 1.2rem !important;
     }
 }
