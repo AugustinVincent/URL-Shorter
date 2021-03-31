@@ -9,10 +9,8 @@
     <?php include '../navbar.php';?>
 
     <div class="contact-container">
-        
-        <h1>Welcome to the contact page</h1>
         <div class="contact-title">
-            <h2> Contact</h2>
+            <h2> Contact us</h2>
             <h3> We will always take care of you ! If you have anything to tell us, please let us know !</h3>
         </div>
 
