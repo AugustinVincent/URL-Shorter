@@ -25,7 +25,7 @@ if(empty($_POST['username']) || empty($_POST['userpassword']) || strlen($_POST['
 {
     // If not the user stay on the signup page and get a error message
 
-    $_SESSION['singup-error'] = "Your sign in connections are wrong. Be sure that your username and your passsword has no white-space and that it contains at least 8 charcters";
+    $_SESSION['singup-error'] = "Your sign in connexions are wrong. Be sure that your username and your passsword has no white-space and that it contains at least 8 characters";
     header('location: ../../views/pages/signup.php');
 }
 // If fields a complete we check if the username isn't already taken 
