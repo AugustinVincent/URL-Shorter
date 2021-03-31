@@ -8,6 +8,15 @@ body
 
 }
 
+.contact-container{
+    height: calc(100vh - 100px);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 h1
 {
     text-align: center;
@@ -15,7 +24,7 @@ h1
 
 .contact-title
 {
-    margin-top: 100px;
+    margin-top: clamp(10px, 5%, 60px);
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -34,7 +43,6 @@ h1
 form
 {
     margin-top: 50px;
-    transition: all 4s ease-in-out;
 }
 
 .form-control
