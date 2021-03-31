@@ -16,7 +16,7 @@
     </div>
 
     <div class="contact-form">
-        <form id="contact-from" method = "post" action = "../../src/component/ContactForm.php">
+        <form method = "post" action = "../../src/component/ContactForm.php">
             <input name = "name type="text class = "form-control" placeholder = "Your Name" required>
             <br>
                 <input name = "email" type="email" class = "form-control" placeholder = "Your Email" required><br>

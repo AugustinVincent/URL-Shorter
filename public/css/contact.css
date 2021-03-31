@@ -34,7 +34,6 @@ h1
 form
 {
     margin-top: 50px;
-    transition: all 4s ease-in-out;
 }
 
 .form-control
@@ -65,7 +64,6 @@ form .submit
     height: 50px;
     margin-top: 20px;
     border-radius: 30px;
-    transition: 0.3s ease-out;
 }
 
 form .submit:hover
