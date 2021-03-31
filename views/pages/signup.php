@@ -20,7 +20,7 @@
                 <input id='username' type="text" name='username' class="username-field form-signup-field">
 
                 <label for="password">Password</label>
-                <input id='password' type="text" name='userpassword' class="username-field form-signup-field">
+                <input id='password' type="password" name='userpassword' class="username-field form-signup-field">
 
                 <input type="submit" class="userpassword-submit form-signup-field" value="S'inscrire">
             </form>
