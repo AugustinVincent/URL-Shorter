@@ -1,9 +1,12 @@
 # URL-Shorter
 
-Welcome to the online URL SHorter
+Informations de connexions de base :
 
-FORTNITE fortnite fortnite fortnite
+Username : admin
+Password : admin
 
-Tets git
-victor!
-mael bg
+Prérequis de création de compte :
+- pas d'espaces
+- 8 caractères minimum
+- username qui n'est pas encore utilisé
+
