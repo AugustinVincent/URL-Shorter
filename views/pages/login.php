@@ -2,6 +2,7 @@
         <title>Connexion</title>
         <link rel="stylesheet" href="../../public/css/login.css">
         <?php unset($_SESSION['singup-error']);?>
+        <?php unset($_SESSION['returnUrl']);?>
     </head>
     <?php require '../navbar.php';?>
     

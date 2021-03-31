@@ -1,6 +1,9 @@
 <?php include '../header.php';?>
     <link rel="stylesheet" href="../../public/css/contact.css">
     <title>Contact</title>
+    <?php unset($_SESSION['singup-error']);?>
+    <?php unset($_SESSION['login-error']);?>
+    <?php unset($_SESSION['returnUrl']);?>
 </head>
 <body>
     <?php include '../navbar.php';?>

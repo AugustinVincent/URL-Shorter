@@ -2,6 +2,7 @@
     <title>Sign Up</title>
     <link rel="stylesheet" href="../../public/css/signup.css">
     <?php unset($_SESSION['login-error']);?>
+    <?php unset($_SESSION['returnUrl']);?>
 </head>
 <body>
     <?php require_once '../navbar.php';?>

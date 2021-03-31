@@ -3,6 +3,7 @@
     <link rel="stylesheet" href="../../public/css/converturl.css">
     <?php unset($_SESSION['singup-error']);?>
     <?php unset($_SESSION['login-error']);?>
+    <?php unset($_SESSION['returnUrl']);?>
 </head>
 <body>
     <?php require '../navbar.php';?>

@@ -31,7 +31,7 @@
                     <input type="submit"class="url-shorter-submit" value='GO'>
                 </form>
             </div>
-            <p><?php if(isset($_SESSION['returnUrl'])) echo $_SESSION['returnUrl'];?></p>
+            <p><?php if(isset($_SESSION['returnUrl'])) echo 'Your link : ' .  $_SESSION['returnUrl'];?></p>
         </div>
     </section>
     </div>

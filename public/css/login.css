@@ -1,6 +1,6 @@
 .landing-section{
     width: 100vw;
-    margin-top: 150px;
+    height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
