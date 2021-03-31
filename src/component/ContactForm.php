@@ -1,3 +1,5 @@
+<!-- Doesn't work since we can't have access to SMTP server for this project -->
+
 <?php
     $name = $POST['name'];
     $visitor_email = $POST['email'];
