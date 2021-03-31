@@ -21,7 +21,7 @@
                 <input id='username' type="text" name='username' class="username-field form-connection-field">
 
                 <label for="password">Password</label>
-                <input id='password' type="text" name='userpassword' class="userpassword-field form-connection-field">
+                <input id='password' type="password" name='userpassword' class="userpassword-field form-connection-field">
 
                 <input type="submit" class="userpassword-submit form-connection-field" value="Se connecter">
             </form>
