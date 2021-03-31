@@ -31,3 +31,12 @@ burgerMenu.addEventListener('click', () =>
     linksContainer.classList.toggle('opened-menu')
     burgerMenu.classList.toggle('cross-menu')
 })
+
+
+function copyToClipboard(target) {
+    var copyTextTarget = document.querySelector(target);
+    copyTextTarget.select();
+    copyTextTarget.setSelectionRange(0, 99999);
+    // alert("Copied the text: " + copyText.value);
+    document.execCommand("copy");
+  }

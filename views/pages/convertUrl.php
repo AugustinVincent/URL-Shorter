@@ -49,7 +49,8 @@
                 <input type='hidden' value="<?=$url['id']?>"  name='urlId[]'>
                 <input type='text' value="<?=$url['urlName']?>"  class="column name-column" name='urlName[]'>
                 <div class="column base-url-column"><?=$url['url']?></div>
-                <div class="column short-url-column"><?= 'localhost:8888/v.php?/=' . $url['urlKey']?></div>
+                <input onclick=<?="copyToClipboard('.short-url-to-copy-" . $url['id'] . "')";?> class=<?= "'" . "column short-url-column short-url-to-copy-" .  $url['id'] . "'" ;?> type="text" value=<?= 'localhost:8888/v.php?/=' . $url['urlKey']?>>
+                <!-- <div class="column short-url-column"><?= 'localhost:8888/v.php?/=' . $url['urlKey']?></div> -->
                 <div class="column stats-column"><?=$url['stats']?></div>
                 <div class="column status-column">
                     <label class="switch">
