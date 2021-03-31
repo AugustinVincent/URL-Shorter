@@ -117,6 +117,15 @@
 .url-container .raw .column.short-url-column{
     width: 20%;
     min-width: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.url-container .raw .column.short-url-column:hover{
+   color: #1B9141;
 }
 
 .url-container .raw .column.stats-column{

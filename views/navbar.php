@@ -1,5 +1,5 @@
 <nav class="navbar">
-    <img src="../../public/img/logo.png" alt="" class="urlight-logo">
+    <a href="home.php"><img src="../../public/img/logo.png" alt="" class="urlight-logo"></a>
     <ul class="links-container">
         <li><a class="link-animation" href="home.php">Home</a></li>
         <?php if(isset($_SESSION['username'])) :?><li><a class="link-animation" href="converturl.php">URL Manager</a></li><?php endif ?>

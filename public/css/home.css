@@ -46,6 +46,7 @@
     text-align: center;
     font-size: 20px;
     outline: none;
+    cursor: pointer;
 }
 
 .btn-container .login-btn{
@@ -109,4 +110,17 @@
     right: 0;
     bottom: 0;
     font-weight: bold;
+}
+
+.copy-input{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.copy-input:hover{
+    color: #1B9141;
 }
