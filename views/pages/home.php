@@ -35,6 +35,8 @@
         </div>
     </section>
     </div>
+
+    <!-- Import ThreeJs librairie for the background -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r126/three.min.js" integrity="sha512-n8IpKWzDnBOcBhRlHirMZOUvEq2bLRMuJGjuVqbzUJwtTsgwOgK5aS0c1JA647XWYfqvXve8k3PtZdzpipFjgg==" crossorigin="anonymous"></script>
 
     <script src="../../public/js/home-bg.js" ></script>

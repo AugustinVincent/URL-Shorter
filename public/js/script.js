@@ -1,14 +1,8 @@
 const deleteCheckbox = Array.from(document.querySelectorAll('.delete-checkbox'))
 const boolValue = Array.from(document.querySelectorAll('.bool-value'))
-// deleteCheckbox.addEventListener('click', () =>
-// {
-//     const urlStatus = parseInt(deleteCheckbox.getAttribute('value'))
-//     console.log(urlStatus)
-//     if(urlStatus === 1)deleteCheckbox.setAttribute('value', 0)
-//     if(urlStatus === 0)deleteCheckbox.setAttribute('value', 1)
-    
-// })
 
+
+// Set the url Status value on true or false on url manager
 deleteCheckbox.forEach((checkbox, index)=> {
     checkbox.addEventListener('click', () =>
     {
@@ -25,14 +19,14 @@ const burgerMenu = document.querySelector('.burger-menu')
 const linksContainer = document.querySelector('.links-container')
 
 
-
+// Toggle the menu state on responsive
 burgerMenu.addEventListener('click', () =>
 {
     linksContainer.classList.toggle('opened-menu')
     burgerMenu.classList.toggle('cross-menu')
 })
 
-
+// Make the user able to copy the shorted link just by clciking it
 function copyToClipboard(target) {
     var copyTextTarget = document.querySelector(target);
     copyTextTarget.select();

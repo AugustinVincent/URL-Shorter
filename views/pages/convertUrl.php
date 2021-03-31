@@ -42,6 +42,7 @@
                 <div class="column status-column">On/Off</div>
                 <div class="column delete-btn-column">Delete</div>
             </div>
+            <!--  Loop throught all the urls in the database, check the urls corresponding to the current user and display all of them in the page -->
             <?php  foreach ($urls as $index => $url) :
                 if($url['username'] == $_SESSION['username']) :
             ?>
