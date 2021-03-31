@@ -11,9 +11,9 @@ Textures
  */
 
 const textureLoader = new THREE.TextureLoader()
-const texture = textureLoader.load('textures/texture.png')
-const disMap = textureLoader.load('textures/displacement-map.png')
-const alphaMap = textureLoader.load('textures/alpha-map.png')
+const texture = textureLoader.load('../../public/img/textures/texture.png')
+const disMap = textureLoader.load('../../public/img/textures/displacement-map.png')
+const alphaMap = textureLoader.load('../../public/img/textures/alpha-map.png')
 
 /**
  * Objects

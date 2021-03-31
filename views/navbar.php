@@ -17,7 +17,7 @@
         
         <?php if(isset($_SESSION['username'])) :?>
         <div class="account-info-container">
-            <li class="account-username-display">Welcome <?=$_SESSION['username']?></li>
+            <li class="account-username-display">Welcome <b><?=$_SESSION['username']?></b></li>
             <li class="logout-btn"><a  href="../../src/component/Logout.php">Logout</a></li>
         </div>
         <?php endif ?>
