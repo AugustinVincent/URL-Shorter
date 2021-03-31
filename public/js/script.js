@@ -26,11 +26,10 @@ burgerMenu.addEventListener('click', () =>
     burgerMenu.classList.toggle('cross-menu')
 })
 
-// Make the user able to copy the shorted link just by clciking it
+// Make the user able to copy the shorted link just by clicking it
 function copyToClipboard(target) {
     var copyTextTarget = document.querySelector(target);
     copyTextTarget.select();
     copyTextTarget.setSelectionRange(0, 99999);
-    // alert("Copied the text: " + copyText.value);
     document.execCommand("copy");
   }
